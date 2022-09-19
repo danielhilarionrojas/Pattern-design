@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product App</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/cerulean/bootstrap.min.css"> <!--BOOTSTRAP-->
+
+</head>
+<body>
+
+    <!--Navegación-->
+    <nav class="navbar navbar-light bg-light">
+        <a href="/" class="navbar-brand">
+            Product App
+        </a>
+    </nav>
+
+    <div class="container">
+        <div id="App" class="row pt-5">
+            <div class="col-md-4"> <!--4 columnas para listarlos-->
+                <div class="card">
+
+                    <!--Título del formulario-->
+                    <div class="card-header">
+                        <h4>Add product</h4>
+                    </div>
+
+                    <!--Formulario-->
+                    <form id="product-form" class="card-body">
+                        <!--Input nombre del producto-->
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Product name" class="form-control">
+                        </div>
+                        <!--Input precio del producto-->
+                        <div class="form-group">
+                            <input type="number" id="price" step="0.1" placeholder="Price product" class="form-control">
+                        </div>
+                        <!--Input año del producto-->
+                        <div class="form-group">
+                            <input type="number" id="year" min="1900" value="2018" placeholder="Year control" class="form-control">
+                        </div>
+                        <!--Botón guardar producto-->
+                        <input type="submit" value="Save" class="btn btn-primary btn-block">
+                    </form> 
+                </div>
+            </div>
+            <div class="col-md-8"> <!--8 columnas para prodcutos-->
+                <div id="product-list" class="col-md-8"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="App.js"></script>
+</body>
+</html>

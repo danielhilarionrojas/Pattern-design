@@ -1,0 +1,5 @@
+figuras\Circle.class
+figuras\Square.class
+figuras\Client.class
+figuras\iShape.class
+figuras\ShapeFactory.class
